@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: darkturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.panel{
+    background-color: white;
+    border-radius: 0.7em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.pricing-plan{
+    border-bottom: 1px solid #e0dcdc;
+}
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.pricing-header{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.pricing-features{
+    color: #016ff9;
+    margin: 50px 0 25px;
+}
+.pricing-features-item{
+    font-weight: 600;
+    font-size: 12px;
+    padding: 15px 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    border-top: 1px solid #e0dcdc;
+}
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e0dcdc;
+}
+
+.pricing-price{
+    color: #016ff9;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+}
+.pricing-button{
+    border: 1px solid hsl(213, 89%, 58%);
+    padding: 15px 35px;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out;
+}
+.pricing-button:hover{
+    background-color: #c7dbf5;
+    
+}
+.pricing-button.is-featured{
+    background-color: #3286ee;
+    color: white;
+    transition: 300ms ease-in-out;
+}
+.pricing-button.is-featured:hover{
+    background-color: #4d88d1;
+
+}
+
+@media (min-width: 900px){
+    .panel{
+        flex-direction: row;
+
+    }
+}
+@media (min-width: 900px){
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #e0dcdc;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+    }
+}
